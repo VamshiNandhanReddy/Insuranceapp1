@@ -6,10 +6,6 @@ import pickle
 
 st.title('Simple Linear Regression App')
 
-# Load the trained model
-with open('linear_regression_model.pkl', 'rb') as file:
-    model = pickle.load(file)
-
 # User input
 income_level = st.number_input('Enter Income Level:', min_value=0, step=1)
 
